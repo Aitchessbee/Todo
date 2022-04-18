@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main">
+        <div class="aside aside1">
+            <input type="text" id="search" name="search">
+            <ul class="topics">
+                <li class="topic">
+                    <img src="images/hamburger.png"alt="" class="hamburger">
+                    <div>Classwork</div>
+                </li>
+                <li class="topic">
+                    <img src="images/hamburger.png" alt="" class="hamburger">
+                    <div>Homework</div>
+                </li>
+                <li class="topic">
+                    <img src="images/hamburger.png" alt="" class="hamburger">
+                    <div>Personal work</div>
+                </li>
+            </ul>
+        </div>
+        <div class=" aside aside2">
+            <h1 class="heading">Personal Work</h1>
+            <ul class="tasks">
+                <li class="task">
+                    <input type="checkbox" class="check" onclick="checked()">
+                    <div>Pick up the laundry</div>
+                    <img src="images/cross.png" alt="" class="cross-image">
+                </li>
+                <li class="task">
+                    <input type="checkbox" class="check">
+                    <div>Clean room</div>
+                    <img src="images/cross.png" alt="" class="cross-image">
+                </li>
+                <li class="task">
+                    <input type="checkbox" class="check">
+                    <div>Wash vegetables and cook</div>
+                    <img src="images/cross.png" alt="" class="cross-image">
+                </li>
+
+            </ul>
+
+            <div class="add-bar">
+                <input type="text" id="add" name="add">
+                <div class="plus">+</div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+    <!-- <div style="height:1000px;"></div> -->
+    <script src="script.js"></script>
+</body>
+</html>
