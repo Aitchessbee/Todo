@@ -1,6 +1,11 @@
 // console.log(document.getElementById("search"))
+// let w = window.innerWidth;
+// let h = window.innerHeight;
+
+// console.log(w,h);
+
 let searchBox = document.getElementById("search")
-console.log(searchBox);
+// console.log(searchBox);
 
 let inputs = document.querySelectorAll('input');
 
@@ -38,8 +43,10 @@ for(let i=0; i<crossList.length; i++){
 
 function crossClick(e){
     console.log("Cross clicked");
-    console.log(e.mousedown);
+    // console.log(e.mousedown);
     // e.target.parentElement.style.display = "none";
+    console.log(e.target.parentElement.nextElementSibling);
+    taskList.removeChild(e.target.parentElement.nextElementSibling);
     taskList.removeChild(e.target.parentElement);
     
 }
@@ -68,6 +75,11 @@ function addTask(e){
     newTask.appendChild(newTaskText);
     newTask.appendChild(newTaskCross);
     taskList.appendChild(newTask);
+
+    let divider = document.createElement("hr");
+    divider.className = "task-divider";
+
+    taskList.appendChild(divider);
 
     document.querySelector("#add").value = "";
 }
