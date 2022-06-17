@@ -1,5 +1,5 @@
 /* 1536 x 746 */
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 body {
     margin: 0;
@@ -50,8 +50,11 @@ body {
 .topic {
     display: flex;
     font-size: 2.5vh;
+    height: 5vh;
     /* width: 80%; */
-    margin-bottom: 1vh;
+    /* margin-bottom: 1vh; */
+    margin-right: 10px;
+    align-items: center;
 }
 
 .topic div {
@@ -69,7 +72,7 @@ body {
 
 .heading {
     color: white;
-    font-family: poppins;
+    font-family: 'Open sans';
     font-size: 50px;
     font-weight: 400;
     margin-left: 100px;
